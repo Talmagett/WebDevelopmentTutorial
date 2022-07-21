@@ -1,0 +1,33 @@
+p{
+  font-family: Comic Neue;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.video-title{
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  width: 500px;
+  line-height: 30px;
+  margin-bottom: 15px;
+}
+.video-stats{
+  font-size: 14px;
+  color: gray;
+  margin-bottom: 50px;
+}
+
+.apple-text{
+  font-size: 23px;
+  background-color: rgb(216, 31, 74);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+.LinkTo{
+  margin-left: 30px;
+}
+.LinkTo:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
