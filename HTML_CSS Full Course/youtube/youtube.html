@@ -8,153 +8,205 @@
 
 <link rel="stylesheet" href="styles/general.css">
 <link rel="stylesheet" href="styles/header.css">
+<link rel="stylesheet" href="styles/sidebar.css">
 <link rel="stylesheet" href="styles/video.css">
 
   </head>
   <body>
-    <div class="header">
+    <header class="header">
       <div class="header-left-section"> 
-        left section
+        <img class="hamburger-menu" src="icons/menu.png" alt="">
+        <img class="youtube-logo" src="icons/youtubeLogo.png" alt="">
       </div>
       <div class="header-middle-section"> 
         <input class="search-bar" type="text" placeholder="Search">
+        <button class="search-button">
+          <img class="search-icon" src="icons/search.png" alt="">
+          <div class="tooltip">Search</div>
+        </button>
+        <button class="voice-search-button">
+          <img class="voice-search-icon" src="icons/micro.png" alt="">
+          <div class="tooltip">Search with your voice</div>
+        </button>
       </div>
       <div class="header-right-section"> 
-        right section
-      </div>
-    </div>
+        <div class="notifications-icon-container">
+          <img class="notifications-icon" src="icons/notifications.png" alt="">
+          <div class="notifications-count">3</div>
+        </div>
 
-    <div class="video-grid">
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/ekko.webp" alt="">
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <img class="profile-picture" src="channels-pictures/dalbek.jpg" alt="">
-          </div>
-          <div class="video-info">
-            <p class="video-title">
-              Brian's ekko
-            </p>
-            <p class="video-author">
-              Pianta
-            </p>
-            <p class="video-stats">
-              1.2M views &#183 6 months ago
-            </p>
-          </div>
-        </div>
+        <img class="current-icon" src="icons/smt.png" alt="">
       </div>
-  
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/claus.webp" alt="">
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <img class="profile-picture" src="channels-pictures/dalbek.jpg" alt="">
-          </div>
-          <div class="video-info">
-            <p class="video-title">
-              Все плюсы Клауса
-            </p>
-            <p class="video-author">
-              Dalbek
-            </p>
-            <p class="video-stats">
-              1.1M views &#183 11 months ago
-            </p>
-          </div>
-        </div>
+    </header>
+    <nav class="sidebar">
+      <div class="sidebar-link">
+        <img src="icons/home.png" alt="">
+        <div>Home</div>
       </div>
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/ekko.webp" alt="">
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <img class="profile-picture" src="channels-pictures/dalbek.jpg" alt="">
-          </div>
-          <div class="video-info">
-            <p class="video-title">
-              Brian's ekko
-            </p>
-            <p class="video-author">
-              Pianta
-            </p>
-            <p class="video-stats">
-              1.2M views &#183 6 months ago
-            </p>
-          </div>
-        </div>
+      <div class="sidebar-link">
+        <img src="icons/explore.png" alt="">
+        <div>Explore</div>
       </div>
-  
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/claus.webp" alt="">
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <img class="profile-picture" src="channels-pictures/dalbek.jpg" alt="">
-          </div>
-          <div class="video-info">
-            <p class="video-title">
-              Все плюсы Клауса
-            </p>
-            <p class="video-author">
-              Dalbek
-            </p>
-            <p class="video-stats">
-              1.1M views &#183 11 months ago
-            </p>
-          </div>
-        </div>
+      <div class="sidebar-link">
+        <img src="icons/subscriptions.png" alt="">
+        <div>Subscriptions</div>
       </div>
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/claus.webp" alt="">
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <img class="profile-picture" src="channels-pictures/dalbek.jpg" alt="">
-          </div>
-          <div class="video-info">
-            <p class="video-title">
-              Brian's ekko
-            </p>
-            <p class="video-author">
-              Pianta
-            </p>
-            <p class="video-stats">
-              1.2M views &#183 6 months ago
-            </p>
-          </div>
-        </div>
+      <div class="sidebar-link">
+        <img src="icons/originals.png" alt="">
+        <div>Originals</div>
       </div>
-  
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/claus.webp" alt="">
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <img class="profile-picture" src="channels-pictures/dalbek.jpg" alt="">
-          </div>
-          <div class="video-info">
-            <p class="video-title">
-              Все плюсы Клауса
-            </p>
-            <p class="video-author">
-              Dalbek
-            </p>
-            <p class="video-stats">
-              1.1M views &#183 11 months ago
-            </p>
-          </div>
-        </div>
+      <div class="sidebar-link">
+        <img src="icons/music.png" alt="">
+        <div>Youtube Music</div>
       </div>
-    </div>
+      <div class="sidebar-link">
+        <img src="icons/libraries.png" alt="">
+        <div>Library</div>
+      </div>
+    </nav>
+    <main>
+    <!--Comments-->
+      <section class="video-grid">
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/ekko.webp" alt="">
+            <div class="video-time">14:20</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channels-pictures/pianta.jpg" alt="">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Brian's ekko
+              </p>
+              <p class="video-author">
+                Pianta
+              </p>
+              <p class="video-stats">
+                1.2M views &#183 6 months ago
+              </p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/claus.webp" alt="">
+            <div class="video-time">18:50</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channels-pictures/dalbek.jpg" alt="">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Все плюсы Клауса
+              </p>
+              <p class="video-author">
+                Dalbek
+              </p>
+              <p class="video-stats">
+                1.1M views &#183 11 months ago
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/ekko.webp" alt="">
+            <div class="video-time">14:20</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channels-pictures/pianta.jpg" alt="">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Brian's ekko
+              </p>
+              <p class="video-author">
+                Pianta
+              </p>
+              <p class="video-stats">
+                1.2M views &#183 6 months ago
+              </p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/claus.webp" alt="">
+            <div class="video-time">18:50</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channels-pictures/dalbek.jpg" alt="">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Все плюсы Клауса
+              </p>
+              <p class="video-author">
+                Dalbek
+              </p>
+              <p class="video-stats">
+                1.1M views &#183 11 months ago
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/ekko.webp" alt="">
+            <div class="video-time">14:20</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channels-pictures/pianta.jpg" alt="">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Brian's ekko
+              </p>
+              <p class="video-author">
+                Pianta
+              </p>
+              <p class="video-stats">
+                1.2M views &#183 6 months ago
+              </p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/claus.webp" alt="">
+            <div class="video-time">18:50</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channels-pictures/dalbek.jpg" alt="">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Все плюсы Клауса
+              </p>
+              <p class="video-author">
+                Dalbek
+              </p>
+              <p class="video-stats">
+                1.1M views &#183 11 months ago
+              </p>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+    </main>
     
   </body>
 </html>
